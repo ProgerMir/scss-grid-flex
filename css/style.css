@@ -169,7 +169,7 @@ input, select {
 
 .top {
   min-height: calc(100vh - 82px);
-  background: url(./../../images/top-bg.jpg) center no-repeat;
+  background: url(./../images/top-bg.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -675,7 +675,7 @@ button {
 }
 
 .promo__inner {
-  background-image: url(./../../images/promo.jpg);
+  background-image: url(./../images/promo.jpg);
   min-height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
