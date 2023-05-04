@@ -1,0 +1,142 @@
+.games {
+    margin-bottom: 70px;
+}
+
+.games__title {
+    margin-bottom: 20px;
+}
+.games__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.games__decription {
+    padding-right: 10px;
+}
+.games__description-title {
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    margin-bottom: 10px;
+}
+.games__description-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #5C5C5E;
+
+    margin-bottom: 30px;
+}
+.games__description-link {
+    display: inline-block;
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+
+    background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    text-transform: uppercase;
+
+    padding: 16px 48px;
+
+    border-image-source: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+    border: 2px solid #BC10D8;
+
+    &:hover{
+        border: 2px solid #5000faed;
+        background: linear-gradient(180deg, #800d92 0%, rgba(37, 5, 105, 0.93) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
+
+
+.games__item {
+    border: 2px solid #800d92;
+    padding: 10px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+.games__item-img {
+    margin-bottom: 10px;
+}
+.games__item-title {
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #070707;
+
+    margin-bottom: 10px;
+}
+.games__item-text {
+    line-height: 18px;
+    color: #5C5C5E;
+
+    & + .games__item-text{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+.games__item-link {
+    background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    margin-top: auto;
+
+    
+    max-width: 100px;
+    border: 1px solid #BC10D8;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    &:hover{
+        background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+        -webkit-background-clip: none;
+        -webkit-text-fill-color: white;
+        background-clip: none;
+        text-fill-color: white;
+    }
+}
+
+
+@media (max-width: 1040px){
+    .games__inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    img{
+        margin: 0 auto;
+        max-width: 70%;
+    }
+}
+
+@media (max-width:800px){
+    .games__inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .games__title{
+        margin-bottom: 15px;
+    }
+}

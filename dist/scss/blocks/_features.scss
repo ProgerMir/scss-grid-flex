@@ -1,0 +1,121 @@
+.features {
+    padding: 50px 0;
+}
+
+.features__titles {
+    display: flex;
+}
+
+.features__titles-title {
+    flex-basis: 300px;
+    padding-right: 15px;
+}
+
+.features__titles-text {
+    max-width: 330px;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+
+    background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-clip: text;
+}
+
+.features__tabs {
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+
+.features__tab {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.features__tab-item {
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+}
+
+.features__tab-item--active{
+    color: #070707
+}
+
+.features__content {
+    position: relative;
+    min-height: 300px;
+}
+
+.features__content-item {
+    display: grid;
+    grid-template-columns: auto 280px;
+    grid-template-rows: auto 150px;
+    gap: 40px;
+    opacity: 0;
+    position: absolute;
+    transition: opacity .2s linear;
+}
+
+.features__content-item--active{
+    opacity: 1;
+}
+
+.features__content-img {
+    grid-row: 1/-1;
+    align-self: stretch;
+    object-fit: cover;
+}
+
+
+
+.features__content-box h3 {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 1040px){
+    
+    .features__tabs{
+        display: block;
+    }
+    .features__tab{
+        display: block;
+        column-count: 2;
+    }   
+    .features__tab-item{
+        display: block;
+    }
+}
+
+@media (max-width:600px){
+    .features{
+        padding-top: 30px;
+        margin-bottom: 150px;
+    }
+    .features__content-item{
+        display: block;
+    }
+    .features__titles{
+        display: block;
+    }
+    .features__titles-text{
+        margin-bottom: 15px;
+    }
+
+    .features__content-box{
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width:300px){  
+    .features__tab-item{
+        margin-bottom: 15px;
+    }
+}

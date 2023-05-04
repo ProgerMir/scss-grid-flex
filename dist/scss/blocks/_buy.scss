@@ -1,0 +1,82 @@
+.buy{
+    margin-bottom: 100px;
+    text-align: center;
+
+    position: relative;
+    overflow-x: hidden;
+}
+.buy__bg {
+    text-transform: uppercase;
+
+    background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+font-weight: 700;
+font-size: 300px;
+line-height: 320px;
+
+opacity: 0.1;
+
+position: absolute;
+z-index: -1;
+animation: line-text 7s ease-in-out 1s infinite;
+}
+
+@keyframes line-text{
+    from{
+        transform: translateX(105%);
+        transform-origin: left center;
+    }to{
+        transform: translateX(-105%);
+        transform-origin: right center;
+    }
+}
+
+.buy__img {
+    margin-bottom: 30px;
+
+}
+
+.buy__btn {
+    display: flex;
+    margin: 0 auto 5px;
+    padding: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+
+    padding: 1px;
+
+    transition: opacity .2s linear;
+
+    &:hover{
+        opacity: .9;
+    }
+
+}
+
+.buy__btn-text {
+    color: #f6f4f5;
+   padding: 20px 110px;
+   text-transform: uppercase;
+
+  
+}
+
+.buy__btn-price {
+    color: #5C5C5E;
+    background-color: #f6f4f5;
+    padding: 20px 115px;
+}
+
+
+@media (max-width: 600px){
+    .buy__btn{
+        flex-direction: column;
+        margin: 0 auto 15px;
+    }
+}
