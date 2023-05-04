@@ -1,0 +1,71 @@
+@import './reset';
+@import './blocks/header';
+@import './blocks/container';
+@import './blocks/nav';
+@import './blocks/menu';
+@import './blocks/basket';
+@import './blocks/top';
+@import './blocks/features';
+@import './blocks/section-title';
+@import './blocks/video';
+@import './blocks/logo';
+@import './blocks/button';
+@import './blocks/games';
+@import './blocks/buy';
+@import './blocks/equipment';
+@import './blocks/promo';
+@import './blocks/accessories';
+@import './blocks/contacts';
+@import './blocks/form';
+@import './blocks/social';
+@import './blocks/footer';
+@import './blocks/titles-similar';
+@import './blocks/menu-btn';
+
+
+@font-face {
+  font-family: 'Helvetica', sans-serif;
+  src: url(./../fonts/helvetica.woff2);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Helvetica-Bold', sans-serif;
+  src: url(./../fonts/helvetica-bold.woff2);
+  font-style: normal;
+  font-weight: 700;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+
+  color: #5c5c5e;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+}
+

@@ -1,0 +1,111 @@
+.accessories{
+    margin-bottom: 100px;
+}
+
+.accessories__text{
+    background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    font-size: 36px;
+    line-height: 41px;
+    text-transform: uppercase;
+
+    
+}
+
+.accessories__item-title{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    /* Black */
+    
+    color: #070707;
+    margin-bottom: 10px;
+    
+    height: 56px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+
+    
+    // text-overflow: ellipsis;
+    // overflow: hidden;
+    // white-space: nowrap;
+    }
+
+.accessories__item-text{
+    margin-bottom: 42px;
+    // height: 56px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    
+}
+
+.accessories__items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.accessories__item{
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid;
+
+border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
+
+
+    text-align: center;
+    padding: 20px;
+}
+
+.accessories__item-price{
+    font-weight: 700;
+font-size: 16px;
+line-height: 18px;
+
+color: #070707;
+margin-top: auto;
+margin-bottom: 20px;
+}
+.accessories__item-btn{
+
+    background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding: 6px 70px;
+
+    border: 1px solid;
+
+border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
+
+    color: #fff;
+
+    margin-top: auto;
+}
+
+
+
+@media (max-width: 915px){
+    .accessories__items{
+        grid-template-columns: repeat(2, 1fr)}
+    }   
+
+@media (max-width: 600px){
+    .accessories__items{
+        grid-template-columns: repeat(1, 1fr)}
+    
+    .accessories{
+        margin-bottom: 40px;
+    }
+    }   

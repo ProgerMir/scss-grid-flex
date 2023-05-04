@@ -1,0 +1,23 @@
+.social {
+    display: flex;
+    gap: 20px;
+    justify-self: flex-end;
+}
+.social__item {
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 600px){
+    .social {
+        display: flex;
+        gap: 10px;
+        
+        order: 1;
+    }
+
+    img.social__img {
+        max-width: 70%;
+    }
+}

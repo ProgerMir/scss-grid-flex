@@ -1,0 +1,28 @@
+
+.video {
+    grid-column: 2/3;
+
+    width: 280px;
+    height: 150px;
+
+    background: url(./../../images/content-bg.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    padding: 9px 10px;
+}
+
+.video__btn {
+    margin-left: 20px;
+}
+
+.video span{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #F6F4F5;
+}
+
